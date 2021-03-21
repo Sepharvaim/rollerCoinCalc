@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="How much earnings can be made with rollercoin">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="dist/css/style.css">
+    <title>Roller coin calculator</title>
+    <style>
+        table {
+	display: table;
+}
+table tr {
+	display: table-cell;
+}
+table tr td {
+	display: block;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>RcCalculator</h1>
+        <div><form action="https://www.paypal.com/donate" method="post" target="_blank">
+            <input type="hidden" name="business" value="NHLF2M884HBSE" />
+            <input type="hidden" name="item_name" value="Support the website" />
+            <input type="hidden" name="currency_code" value="EUR" />
+            <input type="image" src="https://www.paypalobjects.com/en_US/IT/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+            <img alt="" border="0" src="https://www.paypal.com/en_IT/i/scr/pixel.gif" width="1" height="1" />
+            </form>
+        <p>Help improve this website</p></div>
+    </header>
+
+    <section class="main">
+
+        <h2>HashPower Converter</h2>
+        
+        <div class="conversion">
+            <div class="_1 slots ">
+                <label for="">Hash</label><input type="number" onchange='hashConversion(event)' oninput='hashConversion(event)'>
+            </div>
+            <div class="_2 slots ">
+                <label for="">Kilo Hash</label><input type="number" onchange='kiloConversion(event)' oninput='kiloConversion(event)'>
+            </div>
+            <div class="_3 slots ">
+                <label for="">Mega Hash</label><input type="number" onchange='megaConversion(event)' oninput='megaConversion(event)'>
+            </div>
+            <div class="_4 slots ">
+                <label for="">Giga Hash</label><input type="number" onchange='gigaConversion(event)' oninput='gigaConversion(event)'>
+            </div>
+            <div class="_5 slots ">
+                <label for="">Tera Hash</label><input style='background-color: grey' type="number" onchange='teraConversion(event)' oninput='teraConversion(event)'>
+            </div>
+            <div class="_6 slots ">
+                <label for="">Peta Hash</label><input type="number" onchange='petaConversion(event)' oninput='petaConversion(event)'>
+            </div>
+            <div class="_7 slots ">
+                <label for="">Exa Hash</label><input type="number" onchange='exaConversion(event)' oninput='exaConversion(event)'>
+            </div>    
+        </div>
+        <div class='instraBanner'>
+            <h2>Instructions</h2>
+            <p>What is rollercoin? <a href="https://rollercoin.com/?r=klam8pwe">See here how it works</a></p>
+            <p>Enter your power in tera hash, use the converter if you don't know how many tera your power corresponds to. then paste the result in the box of your interest and calculate. ATTENTION all the preset values ​​may not correspond to the actual current ones.
+            </p>
+            <div>
+                <!-- https://rollercoin.com/blog/how-rollercoin-works/ -->
+						<!--Start rollercoin.com code-->
+						<!-- <a href="https://rollercoin.com/?r=klam8pwe">
+							<img src="//rollercoin.com/static/img/referral/banners/ref_336280.gif" alt="promo"/>
+						</a> -->
+						<!--End rollercoin.com code-->
+					
+            </div>
+        </div>
+
+        <!-- // calcolate earning  -->
+        <div class="earningsCalc">
+            <!-- /tabella dei dati -->
+            <div class="inputData">
+                <div class="btcPower btc"><label for="">BTC Power</label><input type="number" value="500000"></div>
+                <div class="dodgePower dodge"><label for="">DODGE Power</label><input type="number" value="500000"></div>
+                <div class="ethPower eth"><label for="">ETH Power</label><input type="number" value="500000"></div>
+                <div class="rltPower rlt"><label for="">RLT Power</label><input type="number" value="500000"></div>
+
+                <div class="btcNetPower btc"><label for="">BTC Network Power</label><input type="number" value='5311'></div>
+                <div class="dodgeNetPower dodge"><label for="">DODGE Network Power</label><input type="number" value='8401'></div>
+                <div class="ethNetPower eth"><label for="">ETH Network Power</label><input type="number" value='1872'></div>
+                <div class="rltNetPower rlt"><label for="">RLT Network Power</label><input type="number" value='3557'></div>
+                
+                <div class="btcBlockReward btc"><label for="">BTC Block Reward</label><input value='0.00009000' type="number"></div>
+                <div class="dodgeBlockReward dodge"><label for="">DODGE Block Reward</label><input value='240' type="number"></div>
+                <div class="ethBlockReward eth"><label for="">ETH Block Reward</label><input value='0.0017' type="number"></div>
+                <div class="rltBlockReward rlt"><label for="">RLT Block Reward</label><input value='5' type="number"></div>
+
+            </div>
+
+            <!--Start rollercoin.com code-->
+						<a style='width: 700px; margin-top: 25px;' href="https://rollercoin.com/?r=klam8pwe">
+							<img style='width: 700px;' src="//rollercoin.com/static/img/referral/banners/ref_72890.gif" alt="promo"/>
+						</a>
+						<!--End rollercoin.com code-->
+
+            <!-- tabella dei guadagni -->
+            <h2>Current in development: Guide for RoI. Earnings in the major currencies. A calculator. Contact me for suggestion or mistakes.</h2>
+            <div class="outputData">
+
+
+						
+					
+
+                <div>
+                    <input type="button" style='display: block' value='Calculate' id='calculate'>
+                </div>
+                
+                <table>
+                    <tr>
+                      <!-- <td>&nbsp;</td> -->
+                      <td>Exp. Reward</td>
+                      <td>Per hour</td>
+                      <td>Per day</td>
+                      <td>Per month</td>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                  </table>
+            </div>
+
+            
+            
+
+        </div>
+        
+    </section>
+    
+    
+    
+    <footer style='text-align: center'>
+        <span>© 2021</span><address>
+            <a href="mailto:Rccalculator@outlook.com">Vaim</a> 
+            </address>
+    </footer>
+
+    <script src='dist/js/script.js'></script>
+    <script src='dist/js/function.js'></script>
+</body>
+</html>

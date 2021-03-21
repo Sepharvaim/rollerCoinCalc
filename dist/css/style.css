@@ -1,0 +1,197 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #191928;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 10%;
+}
+
+header h1 {
+  color: white;
+}
+
+header div {
+  color: white;
+}
+
+.conversion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.conversion div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.conversion div label {
+  color: #01E1E4;
+}
+
+.conversion div input {
+  width: 175px;
+}
+
+.main h2 {
+  color: white;
+  text-align: center;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.earningsCalc {
+  margin: 0 auto;
+  width: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #181928;
+}
+
+.earningsCalc .inputData {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.earningsCalc .inputData .btc input, .earningsCalc .inputData .eth input, .earningsCalc .inputData .rlt input, .earningsCalc .inputData .dodge input {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 15px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.earningsCalc .inputData .btc input, .earningsCalc .inputData .btc label {
+  color: #f7931a;
+}
+
+.earningsCalc .inputData .eth input, .earningsCalc .inputData .eth label {
+  color: #987eff;
+}
+
+.earningsCalc .inputData .dodge input, .earningsCalc .inputData .dodge label {
+  color: #c2a633;
+}
+
+.earningsCalc .inputData .rlt input, .earningsCalc .inputData .rlt label {
+  color: #03e1e4;
+}
+
+.earningsCalc .inputData div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 24%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 21%;
+          flex: 1 1 21%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.earningsCalc .inputData div input {
+  background-color: #181928;
+}
+
+.earningsCalc .outputData {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.earningsCalc label {
+  color: white;
+}
+
+.earningsCalc #calculate {
+  width: 125px;
+  height: 40px;
+  font-size: 20px;
+  color: green;
+}
+
+table {
+  color: white;
+  width: 700px;
+  position: absolute;
+  left: -172px;
+  margin: 50px 0;
+  padding: 0 0 50px 0;
+}
+
+table tr {
+  text-align: right;
+}
+
+td {
+  width: 169px;
+  margin: 2px;
+  border-bottom: 1px solid black;
+}
+
+table tr:nth-child(2) {
+  background-color: #f7931a;
+}
+
+table tr:nth-child(3) {
+  background-color: #c2a633;
+}
+
+table tr:nth-child(4) {
+  background-color: #987eff;
+}
+
+table tr:nth-child(5) {
+  background-color: #03e1e4;
+}
+
+footer {
+  margin: 150px 0 0 0;
+}
+
+.instraBanner {
+  width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
