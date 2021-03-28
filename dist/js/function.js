@@ -255,7 +255,7 @@ function calcEarnings() {
         currentDayBlock.innerText = (blockReward * 12 * 24).toFixed(9).replace(/\.?0+$/,"")
 
         let currentMonthBlock = document.querySelector(`table tr:nth-child(${i+2}) td:nth-child(4)`);
-        currentMonthBlock.innerText = (blockReward* 12 * 24 * 30).toFixed(8).replace(/\.?0+$/,"")
+        currentMonthBlock.innerText = (blockReward* 12 * 24 * 30).toFixed(9).replace(/\.?0+$/,"")
     }
 
     
