@@ -1,0 +1,49 @@
+.conversion {
+    display: flex;
+    justify-content: center;
+    
+    div {
+        flex-direction: row;
+        display: flex;
+        
+        label {
+            color: #01E1E4;
+        }
+        
+        input {
+            width: 175px;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .conversion {
+        // padding: 0px;
+        display: flex;
+        flex-direction: column;      
+        div {
+            padding: 0 40px;
+            justify-content: space-between; 
+        }
+
+    }
+    .instraBanner {
+        background-color: red;
+        width: 375px!important;
+     
+    }
+
+}
+
+.instraBanner {
+  width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  a {
+      color: #01E1E4;
+  }
+  p { 
+      margin-bottom: 15px;
+  }
+}

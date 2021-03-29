@@ -1,0 +1,17 @@
+footer {
+    // border: 1px solid red;
+    margin: 150px 0 0 0;
+    color: white;
+    a {
+        color: red;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    footer {
+        margin: 25px 0 0 0;
+        padding-bottom: 19px;
+    }
+}
+
+

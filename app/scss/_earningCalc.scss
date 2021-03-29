@@ -1,0 +1,113 @@
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.earningsCalc {
+    margin: 0 auto;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    background-color: #181928;
+
+    p {
+        color: white;
+        text-align: center;   
+    }
+
+    .inputData {
+        display: flex;
+        flex-wrap: wrap;
+        
+        .btc input, .eth input, .rlt input, .dodge input {
+            font-family: 'Press Start 2P', cursive;
+            font-size: 15px;
+            // direction: rtl;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        .btc input, .btc label {
+            color: #f7931a;
+        }
+        .eth input, .eth label {
+            color: #987eff;
+        }
+        .dodge input, .dodge label {
+            color: #c2a633;
+        }
+        .rlt input, .rlt label {
+            color: #03e1e4;
+        }
+        
+        div {
+            display: flex;
+            width: 24%;
+            flex: 1 1 21%;
+            flex-direction: column;
+
+            
+
+            input {
+                // background-color: #6c757d;
+                background-color: #181928;
+            }
+        }
+    }
+
+    .outputData {
+        display:flex;
+        justify-content:center;
+        position: relative;
+    }
+
+    label {
+        color: white;
+    }
+    #calculate {
+        width: 125px;
+        height: 40px;
+        font-size: 20px;
+        color: green;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .earningsCalc {
+        width: 100%;
+
+        .inputData {
+            align-content: center;
+            flex-direction: column;
+            .btc {
+                order: -1;
+            }
+            .dodge {
+                order: 0;
+            }
+            .eth {
+                order: 1;
+            }
+            .rlt {
+                order: 2;
+            }
+            
+            div {
+                width: 100%;
+            }
+          
+        }        
+    }
+
+    #refereal {
+        width: 375px!important;
+        margin: 0 auto;
+    }
+
+    #myBanner {    
+        width: 375px!important;
+        content: url("//rollercoin.com/static/img/referral/banners/ref_250250.gif")!important;
+    }
+}
+
+
