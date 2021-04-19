@@ -249,13 +249,13 @@ function calcEarnings() {
         currentEarningBlock.innerText = blockReward.toFixed(9).replace(/\.?0+$/,"")
 
         let currentHourBlock = document.querySelector(`table tr:nth-child(${i+2}) td:nth-child(2)`);
-        currentHourBlock.innerText = (blockReward * 12).toFixed(9).replace(/\.?0+$/,"")
+        currentHourBlock.innerText = (blockReward * 6).toFixed(9).replace(/\.?0+$/,"")
 
         let currentDayBlock = document.querySelector(`table tr:nth-child(${i+2}) td:nth-child(3)`);
-        currentDayBlock.innerText = (blockReward * 12 * 24).toFixed(9).replace(/\.?0+$/,"")
+        currentDayBlock.innerText = (blockReward * 6 * 24).toFixed(9).replace(/\.?0+$/,"")
 
         let currentMonthBlock = document.querySelector(`table tr:nth-child(${i+2}) td:nth-child(4)`);
-        currentMonthBlock.innerText = (blockReward* 12 * 24 * 30).toFixed(9).replace(/\.?0+$/,"")
+        currentMonthBlock.innerText = (blockReward* 6 * 24 * 30).toFixed(9).replace(/\.?0+$/,"")
     }
 
     
