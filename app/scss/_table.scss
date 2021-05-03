@@ -1,4 +1,4 @@
-table {
+.rewardTable {
     color: white;
     width: 700px;
     // border: 1px solid red;
@@ -18,16 +18,16 @@ td {
     border-bottom: 1px solid black;
 }
 
-table tr:nth-child(2) {
+.rewardTable tr:nth-child(2) {
     background-color: #f7931a;
 }
-table tr:nth-child(3) {
+.rewardTable tr:nth-child(3) {
     background-color: #c2a633;
 }
-table tr:nth-child(4) {
+.rewardTable tr:nth-child(4) {
     background-color: #987eff;
 }
-table tr:nth-child(5) {
+.rewardTable tr:nth-child(5) {
     background-color: #03e1e4;
 }
 
@@ -39,7 +39,7 @@ table tr:nth-child(5) {
             margin-bottom: -15px;
         }
     }
-    table {
+    .rewardTable {
         text-align: center;
         margin: 50px auto!important;
         left: 0;

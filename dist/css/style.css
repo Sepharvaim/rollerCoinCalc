@@ -121,6 +121,7 @@ header div {
 
 .main h3 {
   color: white;
+  text-align: center;
 }
 
 input[type=number]::-webkit-inner-spin-button,
@@ -262,7 +263,7 @@ input[type=number]::-webkit-outer-spin-button {
   }
 }
 
-table {
+.rewardTable {
   color: white;
   width: 700px;
   position: absolute;
@@ -271,7 +272,7 @@ table {
   padding: 0 0 50px 0;
 }
 
-table tr {
+.rewardTable tr {
   text-align: right;
 }
 
@@ -281,19 +282,19 @@ td {
   border-bottom: 1px solid black;
 }
 
-table tr:nth-child(2) {
+.rewardTable tr:nth-child(2) {
   background-color: #f7931a;
 }
 
-table tr:nth-child(3) {
+.rewardTable tr:nth-child(3) {
   background-color: #c2a633;
 }
 
-table tr:nth-child(4) {
+.rewardTable tr:nth-child(4) {
   background-color: #987eff;
 }
 
-table tr:nth-child(5) {
+.rewardTable tr:nth-child(5) {
   background-color: #03e1e4;
 }
 
@@ -308,7 +309,7 @@ table tr:nth-child(5) {
     margin: 0 auto;
     margin-bottom: -15px;
   }
-  table {
+  .rewardTable {
     text-align: center;
     margin: 50px auto !important;
     left: 0;
@@ -316,11 +317,11 @@ table tr:nth-child(5) {
     width: 375px !important;
     padding: 0;
   }
-  table td {
+  .rewardTable td {
     font-size: 15px;
     width: 75px;
   }
-  table tr:nth-child(1) {
+  .rewardTable tr:nth-child(1) {
     display: none;
   }
 }
@@ -338,6 +339,63 @@ footer a {
   footer {
     margin: 25px 0 0 0;
     padding-bottom: 19px;
+  }
+}
+
+.convinienceChart {
+  width: 700px;
+  color: white;
+  margin-top: 150px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: height 5s;
+  transition: height 5s;
+  height: 80px;
+  margin: 150px auto 0;
+}
+
+.convinienceChart td {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 60px;
+}
+
+.convinienceChart .buttonWhatMine {
+  background-color: #efefef;
+  color: green;
+  border: 1px solid red;
+}
+
+.convinienceChart h2 {
+  font-size: 12px;
+}
+
+.toToggle {
+  height: 1150px;
+}
+
+@media only screen and (max-width: 600px) {
+  .convinienceChart {
+    margin-top: 0px;
+    width: 450px;
+  }
+  .convinienceChart td {
+    width: 105px;
+    margin-right: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

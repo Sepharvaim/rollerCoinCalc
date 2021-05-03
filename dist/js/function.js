@@ -1,3 +1,8 @@
+
+
+
+
+
 let slots = document.querySelectorAll('.slots>input')
 
 let kiloConversion = function(e) {
@@ -264,3 +269,18 @@ function calcEarnings() {
 
 let calculateButton = document.getElementById('calculate');
 calculateButton.addEventListener('click',calcEarnings);
+
+
+
+
+
+// ALZA E ABBASSA SEZIONE COSA COMPRARE
+
+let buttonWhatBuy = document.querySelector('.buttonWhatMine');
+let sectionToHide = document.querySelector('.convinienceChart');
+buttonWhatBuy.addEventListener('click', toggleHeight);
+
+function toggleHeight() {
+    console.log('ciao')
+    sectionToHide.classList.toggle('toToggle')
+}
