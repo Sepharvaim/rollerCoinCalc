@@ -209,6 +209,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .earningsCalc label {
   color: white;
+  font-family: "Times New Roman";
 }
 
 .earningsCalc #calculate {
@@ -259,8 +260,9 @@ input[type=number]::-webkit-outer-spin-button {
     padding: 0;
   }
   #myBanner {
+    content: url("dist/img/promo-coinbase.jpg") !important;
+    width: 375px !important;
     width: 300px !important;
-    content: url("//rollercoin.com/static/img/referral/banners/ref_250250.gif") !important;
   }
 }
 
@@ -382,7 +384,7 @@ footer a {
 }
 
 .convinienceChart h2 {
-  font-size: 12px;
+  font-size: 18px;
 }
 
 .toToggle {
