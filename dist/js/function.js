@@ -1,173 +1,186 @@
 
 
+let myPower = document.querySelector('.inputData');
+console.log(myPower);
+let secondPower = myPower.querySelectorAll('input')
 
+console.log(secondPower);
+
+let arrayOfPower = [];
+for (let i = 0; i < 4 ; i++) {
+    arrayOfPower.push(secondPower[i]);
+}
+console.log(arrayOfPower);
 
 
 let slots = document.querySelectorAll('.slots>input')
 
-let kiloConversion = function(e) {
-    // se evento e' 
-    let kiloHas = document.querySelector('._2>input').value;
-    for (let i = 0; i< slots.length; i++) {
-        switch (i) {
-            case 0:
-                slots[i].value = kiloHas * 1000;
-                break;
-            case 1:
-                slots[i] = kiloHas;
-                break;
-            case 2: 
-                slots[i].value = kiloHas / 1000;
-                break;
-            case 3: 
-                slots[i].value = kiloHas / 1000000;
-                break;     
-            case 4: 
-            slots[i].value = Number(kiloHas / 1000000000).toFixed(15).replace(/\.?0+$/,"")
-                break;
-            case 5:
-                slots[i].value = Number(kiloHas / 1000000000000).toFixed(15).replace(/\.?0+$/,"")
-                break;
-            case 6: 
-                slots[i].value = Number(kiloHas / 1000000000000000).toFixed(15).replace(/\.?0+$/,"")
-                break;
-            case 7:
-                slots[i].value = Number(kiloHas / 1000000000000000000).toFixed(18).replace(/\.?0+$/,"") 
-                break;   
-        }
-    }
-}
+// let kiloConversion = function(e) {
+//     // se evento e' 
+//     let kiloHas = document.querySelector('._2>input').value;
+//     for (let i = 0; i< slots.length; i++) {
+//         switch (i) {
+//             case 0:
+//                 slots[i].value = kiloHas * 1000;
+//                 break;
+//             case 1:
+//                 slots[i] = kiloHas;
+//                 break;
+//             case 2: 
+//                 slots[i].value = kiloHas / 1000;
+//                 break;
+//             case 3: 
+//                 slots[i].value = kiloHas / 1000000;
+//                 break;     
+//             case 4: 
+//             slots[i].value = Number(kiloHas / 1000000000).toFixed(15).replace(/\.?0+$/,"")
+//                 break;
+//             case 5:
+//                 slots[i].value = Number(kiloHas / 1000000000000).toFixed(15).replace(/\.?0+$/,"")
+//                 break;
+//             case 6: 
+//                 slots[i].value = Number(kiloHas / 1000000000000000).toFixed(15).replace(/\.?0+$/,"")
+//                 break;
+//             case 7:
+//                 slots[i].value = Number(kiloHas / 1000000000000000000).toFixed(18).replace(/\.?0+$/,"") 
+//                 break;   
+//         }
+//     }
+// }
 
-let hashConversion = function(e) {
-    // se evento e' 
-    let hash = document.querySelector('._1>input').value;
-    for (let i = 0; i< slots.length; i++) {
-        switch (i) {
-            case 0:
-                slots[i].value = hash;
-                break;
-            case 1:
-                slots[i].value = hash / 1000
-                break;
-            case 2: 
-                slots[i].value = hash / 1000000;
-                break;
-            case 3: 
-                slots[i].value = Number(hash / 1000000000).toFixed(12).replace(/\.?0+$/,"")
-                break;     
-            case 4: 
-                slots[i].value = Number(hash / 1000000000000).toFixed(15).replace(/\.?0+$/,"")
-                break;
-            case 5:
-                slots[i].value = Number(hash / 1000000000000000).toFixed(18).replace(/\.?0+$/,"")
-                break;
-            case 6: 
-                slots[i].value = Number(hash / 1000000000000000000).toFixed(18).replace(/\.?0+$/,"")
-                break;
-            case 7:
-                slots[i].value = Number(hash / 1000000000000000000000).toFixed(18).replace(/\.?0+$/,"") 
-                break;   
-        }
-    }
-}
+// let hashConversion = function(e) {
+//     // se evento e' 
+//     let hash = document.querySelector('._1>input').value;
+//     for (let i = 0; i< slots.length; i++) {
+//         switch (i) {
+//             case 0:
+//                 slots[i].value = hash;
+//                 break;
+//             case 1:
+//                 slots[i].value = hash / 1000
+//                 break;
+//             case 2: 
+//                 slots[i].value = hash / 1000000;
+//                 break;
+//             case 3: 
+//                 slots[i].value = Number(hash / 1000000000).toFixed(12).replace(/\.?0+$/,"")
+//                 break;     
+//             case 4: 
+//                 slots[i].value = Number(hash / 1000000000000).toFixed(15).replace(/\.?0+$/,"")
+//                 break;
+//             case 5:
+//                 slots[i].value = Number(hash / 1000000000000000).toFixed(18).replace(/\.?0+$/,"")
+//                 break;
+//             case 6: 
+//                 slots[i].value = Number(hash / 1000000000000000000).toFixed(18).replace(/\.?0+$/,"")
+//                 break;
+//             case 7:
+//                 slots[i].value = Number(hash / 1000000000000000000000).toFixed(18).replace(/\.?0+$/,"") 
+//                 break;   
+//         }
+//     }
+// }
 
 
-let megaConversion = function(e) {
-    // se evento e' 
-    var megaHash = document.querySelector('._3>input').value;
-    for (let i = 0; i< slots.length; i++) {
-        switch (i) {
-            case 0:
-                slots[i].value = megaHash * 1000000;
-                break;
-            case 1:
-                slots[i].value = megaHash * 1000
-                break;
-            case 2: 
-                slots[i].value = megaHash;
-                break;
-            case 3: 
-                slots[i].value = Number(megaHash / 1000).toFixed(9).replace(/\.?0+$/,"")
-                break;     
-            case 4: 
-                slots[i].value = Number(megaHash / 1000000).toFixed(15).replace(/\.?0+$/,"")
-                break;
-            case 5:
-                slots[i].value = Number(megaHash / 1000000000).toFixed(18).replace(/\.?0+$/,"")
-                break;
-            case 6: 
-                slots[i].value = Number(megaHash / 1000000000000).toFixed(21).replace(/\.?0+$/,"")
-                break;
-            case 7:
-                slots[i].value = Number(megaHash / 1000000000000000).toFixed(24).replace(/\.?0+$/,"") 
-                break;   
-        }
-    }
-}
+// let megaConversion = function(e) {
+//     // se evento e' 
+//     var megaHash = document.querySelector('._3>input').value;
+//     for (let i = 0; i< slots.length; i++) {
+//         switch (i) {
+//             case 0:
+//                 slots[i].value = megaHash * 1000000;
+//                 break;
+//             case 1:
+//                 slots[i].value = megaHash * 1000
+//                 break;
+//             case 2: 
+//                 slots[i].value = megaHash;
+//                 break;
+//             case 3: 
+//                 slots[i].value = Number(megaHash / 1000).toFixed(9).replace(/\.?0+$/,"")
+//                 break;     
+//             case 4: 
+//                 slots[i].value = Number(megaHash / 1000000).toFixed(15).replace(/\.?0+$/,"")
+//                 break;
+//             case 5:
+//                 slots[i].value = Number(megaHash / 1000000000).toFixed(18).replace(/\.?0+$/,"")
+//                 break;
+//             case 6: 
+//                 slots[i].value = Number(megaHash / 1000000000000).toFixed(21).replace(/\.?0+$/,"")
+//                 break;
+//             case 7:
+//                 slots[i].value = Number(megaHash / 1000000000000000).toFixed(24).replace(/\.?0+$/,"") 
+//                 break;   
+//         }
+//     }
+// }
 
-let gigaConversion = function(e) {
-    // se evento e' 
-    var gigaHash = document.querySelector('._4>input').value;
-    for (let i = 0; i< slots.length; i++) {
-        switch (i) {
-            case 0:
-                slots[i].value = gigaHash * 1000000000;
-                break;
-            case 1:
-                slots[i].value = gigaHash * 1000000
-                break;
-            case 2: 
-                slots[i].value = gigaHash * 1000;
-                break;
-            case 3: 
-                slots[i].value = gigaHash;
-                break;     
-            case 4: 
-                slots[i].value = Number(gigaHash / 1000).toFixed(15).replace(/\.?0+$/,"")
-                break;
-            case 5:
-                slots[i].value = Number(gigaHash / 1000000).toFixed(18).replace(/\.?0+$/,"")
-                break;
-            case 6: 
-                slots[i].value = Number(gigaHash / 1000000000).toFixed(21).replace(/\.?0+$/,"")
-                break;
-            case 7:
-                slots[i].value = Number(gigaHash / 1000000000000).toFixed(24).replace(/\.?0+$/,"") 
-                break;   
-        }
-    }
-}
+// let gigaConversion = function(e) {
+//     // se evento e' 
+//     var gigaHash = document.querySelector('._4>input').value;
+//     for (let i = 0; i< slots.length; i++) {
+//         switch (i) {
+//             // case 0:
+//             //     slots[i].value = gigaHash * 1000000000;
+//             //     break;
+//             // case 1:
+//             //     slots[i].value = gigaHash * 1000000
+//             //     break;
+//             // case 2: 
+//             //     slots[i].value = gigaHash * 1000;
+//             //     break;
+//             case 0: 
+//                 slots[i].value = gigaHash;
+//                 break;     
+//             case 1: 
+//                 slots[i].value = Number(gigaHash / 1000).toFixed(3).replace(/\./,"")
+//                 break;
+//             case 2:
+//                 slots[i].value = Number(gigaHash / 1000000).toFixed(3).replace(/\.?0+$/,"")
+//                 break;
+//             // case 6: 
+//             //     slots[i].value = Number(gigaHash / 1000000000).toFixed(21).replace(/\.?0+$/,"")
+//             //     break;
+//             // case 7:
+//             //     slots[i].value = Number(gigaHash / 1000000000000).toFixed(24).replace(/\.?0+$/,"") 
+//             //     break;   
+//         }
+//     }
+// }
 
 let teraConversion = function(e) {
     // se evento e' 
     var teraHash = document.querySelector('._5>input').value;
     for (let i = 0; i< slots.length; i++) {
         switch (i) {
-            case 0:
-                slots[i].value = teraHash * 1000000000000;
+            // case 0:
+            //     slots[i].value = teraHash * 1000000000000;
+            //     break;
+            // case 1:
+            //     slots[i].value = teraHash * 1000000000;
+            //     break;
+            // case 2: 
+            //     slots[i].value = teraHash * 1000000;
+            //     break;
+            case 0: 
+            slots[i].value = teraHash * 1000;
+            break;     
+            case 1: 
+                slots[i].value = teraHash;
                 break;
-            case 1:
-                slots[i].value = teraHash * 1000000000;
+            case 2:
+                slots[i].value = Number(teraHash / 1000000).toFixed(6).replace(/\.?0+$/,"")
                 break;
-            case 2: 
-                slots[i].value = teraHash * 1000000;
-                break;
-            case 3: 
-                slots[i].value = teraHash * 1000;
-                break;     
-            case 4: 
-                slots[i].value = Number(teraHash).toFixed(15).replace(/\.?0+$/,"")
-                break;
-            case 5:
-                slots[i].value = Number(teraHash / 1000).toFixed(18).replace(/\.?0+$/,"")
-                break;
-            case 6: 
-                slots[i].value = Number(teraHash / 1000000).toFixed(21).replace(/\.?0+$/,"")
-                break;
-            case 7:
-                slots[i].value = Number(teraHash / 1000000000).toFixed(24).replace(/\.?0+$/,"") 
-                break;   
+            // case 6: 
+            //     slots[i].value = Number(teraHash / 1000000).toFixed(21).replace(/\.?0+$/,"")
+            //     break;
+            // case 7:
+            //     slots[i].value = Number(teraHash / 1000000000).toFixed(24).replace(/\.?0+$/,"") 
+            //     break;   
         }
+    }
+    for (let i = 0; i < arrayOfPower.length; i++) {
+        arrayOfPower[i].value = teraHash
     }
 }
 
@@ -176,66 +189,70 @@ let petaConversion = function(e) {
     var petaHash = document.querySelector('._6>input').value;
     for (let i = 0; i< slots.length; i++) {
         switch (i) {
-            case 0:
-                slots[i].value = petaHash * 1000000000000000;
-                break;
-            case 1:
-                slots[i].value = petaHash * 1000000000000;
-                break;
-            case 2: 
-                slots[i].value = petaHash * 1000000000;
-                break;
-            case 3: 
-                slots[i].value = petaHash * 1000000;
+            // case 0:
+            //     slots[i].value = petaHash * 1000000000000000;
+            //     break;
+            // case 1:
+            //     slots[i].value = petaHash * 1000000000000;
+            //     break;
+            // case 2: 
+            //     slots[i].value = petaHash * 1000000000;
+            //     break;
+            case 0: 
+                slots[i].value = Number(petaHash * 1000000).toFixed(1).replace(/\.?0+$/,"");
                 break;     
-            case 4: 
-                slots[i].value = Number(petaHash * 1000).toFixed(15).replace(/\.?0+$/,"")
+            case 1: 
+                slots[i].value = Number(petaHash / 1000).toFixed(6).replace(/\./,"");
                 break;
-            case 5:
-                slots[i].value = Number(petaHash).toFixed(18).replace(/\.?0+$/,"")
+            case 2:
+                slots[i].value = petaHash;
                 break;
-            case 6: 
-                slots[i].value = Number(petaHash / 1000).toFixed(18).replace(/\.?0+$/,"")
-                break;
+            // case 6: 
+            //     slots[i].value = Number(petaHash / 1000).toFixed(18).replace(/\.?0+$/,"")
+            //     break;
             // case 7:
             //     slots[i].value = Number(petaHash / 1000000).toFixed(21).replace(/\.?0+$/,"") 
             //     break;   
         }
     }
-}
-
-let exaConversion = function(e) {
-    // se evento e' 
-    var exaHash = document.querySelector('._7>input').value;
-    for (let i = 0; i< slots.length; i++) {
-        switch (i) {
-            case 0:
-                slots[i].value = exaHash * 1000000000000000000;
-                break;
-            case 1:
-                slots[i].value = exaHash * 1000000000000000;
-                break;
-            case 2: 
-                slots[i].value = exaHash * 1000000000000;
-                break;
-            case 3: 
-                slots[i].value = exaHash * 1000000000;
-                break;     
-            case 4: 
-                slots[i].value = Number(exaHash * 1000000).toFixed(15).replace(/\.?0+$/,"")
-                break;
-            case 5:
-                slots[i].value = Number(exaHash *1000).toFixed(18).replace(/\.?0+$/,"")
-                break;
-            case 6: 
-                slots[i].value = Number(exaHash).toFixed(18).replace(/\.?0+$/,"")
-                break;
-            case 7:
-                slots[i].value = Number(exaHash / 1000).toFixed(18).replace(/\.?0+$/,"") 
-                break;   
-        }
+    for (let i = 0; i < arrayOfPower.length; i++) {
+        teraHash = document.getElementById('tera').value
+        arrayOfPower[i].value = teraHash
     }
 }
+
+// let exaConversion = function(e) {
+//     // se evento e' 
+//     var exaHash = document.querySelector('._7>input').value;
+//     for (let i = 0; i< slots.length; i++) {
+//         switch (i) {
+//             case 0:
+//                 slots[i].value = exaHash * 1000000000000000000;
+//                 break;
+//             case 1:
+//                 slots[i].value = exaHash * 1000000000000000;
+//                 break;
+//             case 2: 
+//                 slots[i].value = exaHash * 1000000000000;
+//                 break;
+//             case 3: 
+//                 slots[i].value = exaHash * 1000000000;
+//                 break;     
+//             case 4: 
+//                 slots[i].value = Number(exaHash * 1000000).toFixed(15).replace(/\.?0+$/,"")
+//                 break;
+//             case 5:
+//                 slots[i].value = Number(exaHash *1000).toFixed(18).replace(/\.?0+$/,"")
+//                 break;
+//             case 6: 
+//                 slots[i].value = Number(exaHash).toFixed(18).replace(/\.?0+$/,"")
+//                 break;
+//             case 7:
+//                 slots[i].value = Number(exaHash / 1000).toFixed(18).replace(/\.?0+$/,"") 
+//                 break;   
+//         }
+//     }
+// }
 
 
 
@@ -284,3 +301,31 @@ function toggleHeight() {
     console.log('ciao')
     sectionToHide.classList.toggle('toToggle')
 }
+
+
+
+var w = window.innerWidth;
+var h = window.innerHeight;
+var ow = window.outerWidth; //including toolbars and status bar etc.
+var oh = window.outerHeight;
+
+let video = document.querySelector('.video');
+
+window.addEventListener('resize', () => {
+w = window.innerWidth;
+changeIFrame();
+})
+
+function changeIFrame() {
+
+    if (w < 601 ) {
+
+        video.width = "260";
+    } else {
+
+        video.width = '560';
+    }
+}
+
+
+

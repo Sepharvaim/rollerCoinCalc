@@ -64,6 +64,7 @@ input[type=number]::-webkit-outer-spin-button {
 
     label {
         color: white;
+        font-family: "Times New Roman"
     }
     #calculate {
         width: 125px;
@@ -98,15 +99,18 @@ input[type=number]::-webkit-outer-spin-button {
           
         }        
     }
+    
 
     #refereal {
         width: 375px!important;
         margin: 0 auto;
+        padding: 0;
     }
 
     #myBanner {    
+        content: url("dist/img/promo-coinbase.jpg")!important;
         width: 375px!important;
-        content: url("//rollercoin.com/static/img/referral/banners/ref_250250.gif")!important;
+        width: 300px!important;
     }
 }
 

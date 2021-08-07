@@ -16,24 +16,7 @@
     }
 }
 
-@media only screen and (max-width: 600px) {
-    .conversion {
-        // padding: 0px;
-        display: flex;
-        flex-direction: column;      
-        div {
-            padding: 0 40px;
-            justify-content: space-between; 
-        }
 
-    }
-    .instraBanner {
-        background-color: red;
-        width: 375px!important;
-     
-    }
-
-}
 
 .instraBanner {
   width: 700px;
@@ -46,4 +29,24 @@
   p { 
       margin-bottom: 15px;
   }
+}
+
+@media only screen and (max-width: 600px) {
+    .conversion {
+        // padding: 0px;
+        display: flex;
+        flex-direction: column;      
+        div {
+            padding: 0 40px;
+            justify-content: space-between; 
+        }
+
+    }
+    .instraBanner {
+        background-color: blue;
+        width: 300px!important;
+       
+    }
+
+  
 }

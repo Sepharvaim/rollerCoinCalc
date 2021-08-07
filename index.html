@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4PTKL1YSJ1"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YGTQZE6EGY"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'G-4PTKL1YSJ1');
+
+  gtag('config', 'G-YGTQZE6EGY');
 </script>
+
 
     <meta charset="UTF-8">
     <meta name="description" content="Roller coin Calculator is a calculator of the 4 main crypto coins available on the rollercoin simulator. Simultaneously!">
@@ -62,14 +64,14 @@
             <div class="_3 slots ">
                 <label for="">Mega Hash</label><input type="number" onchange='megaConversion(event)' oninput='megaConversion(event)'>
             </div> -->
-            <div class="_4 slots ">
-                <label for="">Giga Hash</label><input type="number" onchange='gigaConversion(event)' oninput='gigaConversion(event)'>
+            <div class="_4 slots " style='display:none'>
+                <label for="">Giga Hash</label><input style='-moz-appearance: textfield;' type="number" onchange='gigaConversion(event)' oninput='gigaConversion(event)'>
             </div>
             <div class="_5 slots ">
-                <label for="">Tera Hash</label><input style='background-color: grey' type="number" onchange='teraConversion(event)' oninput='teraConversion(event)'>
+                <label for="">Tera Hash</label><input style='-moz-appearance: textfield; background-color: grey' id='tera' type="number" onchange='teraConversion(event)' oninput='teraConversion(event)'>
             </div>
             <div class="_6 slots ">
-                <label for="">Peta Hash</label><input type="number" onchange='petaConversion(event)' oninput='petaConversion(event)'>
+                <label for="">Peta Hash</label><input style='-moz-appearance: textfield;' type="number" onchange='petaConversion(event)' oninput='petaConversion(event)'>
             </div>
             <!-- <div class="_7 slots ">
                 <label for="">Exa Hash</label><input type="number" onchange='exaConversion(event)' oninput='exaConversion(event)'>
@@ -79,28 +81,30 @@
         <div class='instraBanner'>
             <h2>Discover your earning potential with rollercoin.</h2>
             <p>What is rollercoin? How much can you earn? <a href="https://rollercoin.com/?r=klam8pwe">See here how it works</a></p>
-            <p>Calculate the earnings of all 4 tokens simultaneously. Enter your th/s or your ph/s and the power of the network. ATTENTION all the preset values ​​may not correspond to the actual current ones.
-            </p>
+
+            <p>Calculate the earnings of all 4 tokens simultaneously. See the video below for instructions.</p>
+            
+            <iframe class='video' id='mideo' style='margin: 25px;' width="560" height="315" src="https://www.youtube.com/embed/ECct17glyg8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
         <!-- // calcolate earning  -->
         <div class="earningsCalc">
             <!-- /tabella dei dati -->
             <div class="inputData">
-                <div class="btcPower btc"><label for="">BTC Power</label><input type="number" value="500000"></div>
-                <div class="dodgePower dodge"><label for="">DODGE Power</label><input type="number" value="500000"></div>
-                <div class="ethPower eth"><label for="">ETH Power</label><input type="number" value="500000"></div>
-                <div class="rltPower rlt"><label for="">RLT Power</label><input type="number" value="500000"></div>
+                <div class="btcPower btc"><label for="">BTC Power</label><input style='-moz-appearance: textfield;' type="number" value="500000"></div>
+                <div class="dodgePower dodge"><label for="">DODGE Power</label><input style='-moz-appearance: textfield;' type="number" value="500000"></div>
+                <div class="ethPower eth"><label for="">ETH Power</label><input style='-moz-appearance: textfield;' type="number" value="500000"></div>
+                <div class="rltPower rlt"><label for="">RLT Power</label><input style='-moz-appearance: textfield;' type="number" value="500000"></div>
 
-                <div class="btcNetPower btc"><label for="">BTC Network Power</label><input type="number" value='6142'></div>
-                <div class="dodgeNetPower dodge"><label for="">DODGE Network Power</label><input type="number" value='3957'></div>
-                <div class="ethNetPower eth"><label for="">ETH Network Power</label><input type="number" value='3550'></div>
-                <div class="rltNetPower rlt"><label for="">RLT Network Power</label><input type="number" value='5237'></div>
+                <div class="btcNetPower btc"><label for="">BTC Network Power</label><input style='-moz-appearance: textfield;' type="number" value='6142'></div>
+                <div class="dodgeNetPower dodge"><label for="">DODGE Network Power</label><input style='-moz-appearance: textfield;' type="number" value='3957'></div>
+                <div class="ethNetPower eth"><label for="">ETH Network Power</label><input style='-moz-appearance: textfield;' type="number" value='3550'></div>
+                <div class="rltNetPower rlt"><label for="">RLT Network Power</label><input style='-moz-appearance: textfield;' type="number" value='5237'></div>
                 
-                <div class="btcBlockReward btc"><label for="">BTC Block Reward</label><input value='0.00030000' type="number"></div>
-                <div class="dodgeBlockReward dodge"><label for="">DODGE Block Reward</label><input value='20' type="number"></div>
-                <div class="ethBlockReward eth"><label for="">ETH Block Reward</label><input value='0.0050' type="number"></div>
-                <div class="rltBlockReward rlt"><label for="">RLT Block Reward</label><input value='30' type="number"></div>
+                <div class="btcBlockReward btc"><label for="">BTC Block Reward</label><input style='-moz-appearance: textfield;' value='0.00030000' type="number"></div>
+                <div class="dodgeBlockReward dodge"><label for="">DODGE Block Reward</label><input style='-moz-appearance: textfield;' value='20' type="number"></div>
+                <div class="ethBlockReward eth"><label for="">ETH Block Reward</label><input style='-moz-appearance: textfield;' value='0.0050' type="number"></div>
+                <div class="rltBlockReward rlt"><label for="">RLT Block Reward</label><input style='-moz-appearance: textfield;' value='30' type="number"></div>
 
             </div>
 

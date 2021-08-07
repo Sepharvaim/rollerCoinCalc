@@ -1,0 +1,409 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #191928;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 10%;
+}
+
+header h1 {
+  color: white;
+}
+
+header div {
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    display: block;
+  }
+  header h1 {
+    text-align: center;
+  }
+  div {
+    text-align: center;
+  }
+  p {
+    margin-top: 1px;
+  }
+}
+
+.conversion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.conversion div {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.conversion div label {
+  color: #01E1E4;
+}
+
+.conversion div input {
+  width: 175px;
+}
+
+.instraBanner {
+  width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+}
+
+.instraBanner a {
+  color: #01E1E4;
+}
+
+.instraBanner p {
+  margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+  .conversion {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .conversion div {
+    padding: 0 40px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .instraBanner {
+    background-color: red;
+    width: 300px !important;
+  }
+}
+
+.main h2 {
+  color: white;
+  text-align: center;
+}
+
+.main h3 {
+  color: white;
+  text-align: center;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.earningsCalc {
+  margin: 0 auto;
+  width: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #181928;
+}
+
+.earningsCalc p {
+  color: white;
+  text-align: center;
+}
+
+.earningsCalc .inputData {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.earningsCalc .inputData .btc input, .earningsCalc .inputData .eth input, .earningsCalc .inputData .rlt input, .earningsCalc .inputData .dodge input {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 15px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.earningsCalc .inputData .btc input, .earningsCalc .inputData .btc label {
+  color: #f7931a;
+}
+
+.earningsCalc .inputData .eth input, .earningsCalc .inputData .eth label {
+  color: #987eff;
+}
+
+.earningsCalc .inputData .dodge input, .earningsCalc .inputData .dodge label {
+  color: #c2a633;
+}
+
+.earningsCalc .inputData .rlt input, .earningsCalc .inputData .rlt label {
+  color: #03e1e4;
+}
+
+.earningsCalc .inputData div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 24%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 21%;
+          flex: 1 1 21%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.earningsCalc .inputData div input {
+  background-color: #181928;
+}
+
+.earningsCalc .outputData {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.earningsCalc label {
+  color: white;
+  font-family: "Times New Roman";
+}
+
+.earningsCalc #calculate {
+  width: 125px;
+  height: 40px;
+  font-size: 20px;
+  color: green;
+}
+
+@media only screen and (max-width: 600px) {
+  .earningsCalc {
+    width: 100%;
+  }
+  .earningsCalc .inputData {
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .earningsCalc .inputData .btc {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .earningsCalc .inputData .dodge {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+  .earningsCalc .inputData .eth {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .earningsCalc .inputData .rlt {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .earningsCalc .inputData div {
+    width: 100%;
+  }
+  #refereal {
+    width: 375px !important;
+    margin: 0 auto;
+    padding: 0;
+  }
+  #myBanner {
+    content: url("dist/img/promo-coinbase.jpg") !important;
+    width: 375px !important;
+    width: 300px !important;
+  }
+}
+
+.rewardTable {
+  color: white;
+  width: 700px;
+  position: absolute;
+  left: -172px;
+  margin: 50px 0;
+  padding: 0 0 50px 0;
+}
+
+.rewardTable tr {
+  text-align: right;
+}
+
+td {
+  width: 169px;
+  margin: 2px;
+  border-bottom: 1px solid black;
+}
+
+.rewardTable tr:nth-child(2) {
+  background-color: #f7931a;
+}
+
+.rewardTable tr:nth-child(3) {
+  background-color: #c2a633;
+}
+
+.rewardTable tr:nth-child(4) {
+  background-color: #987eff;
+}
+
+.rewardTable tr:nth-child(5) {
+  background-color: #03e1e4;
+}
+
+@media only screen and (max-width: 600px) {
+  .outputData {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .outputData div {
+    margin: 0 auto;
+    margin-bottom: -15px;
+  }
+  .rewardTable {
+    text-align: center;
+    margin: 50px auto !important;
+    left: 0;
+    position: relative;
+    width: 365px !important;
+    padding: 0;
+  }
+  .rewardTable td {
+    font-size: 15px;
+    width: 75px;
+  }
+  .rewardTable tr:nth-child(1) {
+    display: none;
+  }
+}
+
+footer {
+  margin: 150px 0 0 0;
+  color: white;
+}
+
+footer a {
+  color: red;
+}
+
+@media only screen and (max-width: 600px) {
+  footer {
+    margin: 25px 0 0 0;
+    padding-bottom: 19px;
+  }
+}
+
+.convinienceChart {
+  width: 700px;
+  color: white;
+  margin-top: 150px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: height 5s;
+  transition: height 5s;
+  height: 80px;
+  margin: 150px auto 0;
+}
+
+.convinienceChart td {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 60px;
+}
+
+.convinienceChart .buttonWhatMine {
+  background-color: #efefef;
+  color: green;
+  border: 1px solid red;
+}
+
+.convinienceChart h2 {
+  font-size: 18px;
+}
+
+.toToggle {
+  height: 1150px;
+}
+
+@media only screen and (max-width: 600px) {
+  .convinienceChart {
+    margin-top: 0px;
+    width: 365px;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .convinienceChart td {
+    width: 92px;
+    margin-right: 0;
+  }
+  .convinienceChart img {
+    width: 80%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

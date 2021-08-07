@@ -22,7 +22,7 @@
         border: 1px solid red;
     }
     h2 {
-        font-size: 12px;
+        font-size: 18px;
     }
 }
 
@@ -33,11 +33,23 @@
 @media only screen and (max-width: 600px) {
     .convinienceChart {
         margin-top: 0px;
-        width: 450px;
+        width: 365px;
+        padding: 0;
+        margin: 0 auto;
+
+        
+        
         td {
-            width: 105px;
+
+            width: 92px;
             margin-right: 0;
+            // margin: 1px;
 
         }
+        img {
+            width: 80%;
+        }
     }
+  
 }
+
